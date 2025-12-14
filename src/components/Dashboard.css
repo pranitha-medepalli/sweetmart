@@ -1,0 +1,53 @@
+.dashboard {
+  padding: 40px 0;
+  min-height: calc(100vh - 80px);
+}
+
+.dashboard-header {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.dashboard-header h1 {
+  font-size: 36px;
+  color: var(--text-primary);
+  margin-bottom: 12px;
+  font-weight: 700;
+}
+
+.dashboard-header p {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.sweets-grid {
+  margin-top: 32px;
+}
+
+.no-results {
+  text-align: center;
+  padding: 60px 20px;
+  background: var(--card-bg);
+  border-radius: 12px;
+  margin-top: 32px;
+}
+
+.no-results p {
+  font-size: 18px;
+  color: var(--text-secondary);
+}
+
+.spinner {
+  animation: spin 1s linear infinite;
+  margin-right: 12px;
+}
+
+@keyframes spin {
+  from {
+    transform: rotate(0deg);
+  }
+  to {
+    transform: rotate(360deg);
+  }
+}
+

@@ -1,0 +1,142 @@
+.admin-sweet-list {
+  margin-top: 32px;
+}
+
+.sweets-table {
+  background: var(--card-bg);
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 2px 8px var(--shadow);
+  overflow-x: auto;
+}
+
+.sweets-table table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.sweets-table thead {
+  background: var(--primary-color);
+  color: white;
+}
+
+.sweets-table th {
+  padding: 16px;
+  text-align: left;
+  font-weight: 600;
+  font-size: 14px;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.sweets-table tbody tr {
+  border-bottom: 1px solid var(--border);
+  transition: background 0.2s ease;
+}
+
+.sweets-table tbody tr:hover {
+  background: #fef3c7;
+}
+
+.sweets-table tbody tr:last-child {
+  border-bottom: none;
+}
+
+.sweets-table td {
+  padding: 16px;
+  vertical-align: middle;
+}
+
+.table-image {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid var(--border);
+}
+
+.sweet-name-cell {
+  font-weight: 600;
+  color: var(--text-primary);
+}
+
+.stock-badge {
+  display: inline-block;
+  padding: 6px 12px;
+  border-radius: 20px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--success);
+  color: white;
+}
+
+.stock-badge.out-of-stock {
+  background: var(--error);
+}
+
+.restock-controls {
+  display: flex;
+  gap: 8px;
+  align-items: center;
+}
+
+.restock-input {
+  width: 80px;
+  padding: 6px 10px;
+  border: 2px solid var(--border);
+  border-radius: 6px;
+  font-size: 14px;
+}
+
+.restock-message {
+  margin-top: 6px;
+  font-size: 12px;
+  padding: 4px 8px;
+  border-radius: 4px;
+}
+
+.restock-message.alert-success {
+  background: #d1fae5;
+  color: #065f46;
+}
+
+.restock-message.alert-error {
+  background: #fee2e2;
+  color: #991b1b;
+}
+
+.action-buttons {
+  display: flex;
+  gap: 8px;
+}
+
+.btn-sm {
+  padding: 8px 12px;
+  font-size: 14px;
+}
+
+@media (max-width: 768px) {
+  .sweets-table {
+    font-size: 14px;
+  }
+
+  .sweets-table th,
+  .sweets-table td {
+    padding: 12px 8px;
+  }
+
+  .table-image {
+    width: 40px;
+    height: 40px;
+  }
+
+  .restock-controls {
+    flex-direction: column;
+    align-items: stretch;
+  }
+
+  .restock-input {
+    width: 100%;
+  }
+}
+
